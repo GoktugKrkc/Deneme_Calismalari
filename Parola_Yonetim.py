@@ -10,16 +10,19 @@ def Sifre_Olustur():
     kucukHarf = ["a","b","c","d","e","f","g","h","j","k","m","n","o","p","r","s","t","u","v","y","z","q","w","x"]
     buyukHarf = ["A","B","C","D","E","F","G","H","J","K","L","M","N","O","P","R","S","T","U","V","Y","Z","Q","W","X"]
     sembol = ["!","<",">","+","%","&","/","=","?","-","_",",",".",":","*"]
-
+    rakam = ["0","1","2","3","4","5","6","7","8","9"]
+    
     parola = []
     for i in range(0,4):
         kckH = random.choice(kucukHarf)
         bykH = random.choice(buyukHarf)
         smb = random.choice(sembol)
+        rkm = random.choice(rakam)
         parola.append(kckH)
         parola.append(bykH)
         parola.append(smb)
-    
+        parola.append(rkm)
+        
     parola = random.sample(parola,9)
     global sifre 
     sifre = ""
